@@ -1,15 +1,29 @@
 {
-  "name": "bric-figma-auth-page",
+  "name": "createos-aurora",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./components/index.js",
+    "./styles.css": "./app/globals.css"
+  },
+  "files": [
+    "components",
+    "app/globals.css"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "dependencies": {
     "next": "16.2.3",
+    "ogl": "^1.0.11",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
