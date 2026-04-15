@@ -1,36 +1,45 @@
 {
-  "name": "createos-aurora",
+  "name": "aurora-background-kit",
   "version": "0.1.0",
   "private": false,
   "type": "module",
+  "description": "Aurora background components for React",
+  "license": "MIT",
   "exports": {
     ".": "./components/index.js",
-    "./styles.css": "./app/globals.css"
+    "./aurora": "./components/Aurora.jsx",
+    "./background": "./components/AuroraBackground.jsx",
+    "./styles.css": "./components/aurora-background.css"
   },
+  "main": "./components/index.js",
+  "sideEffects": [
+    "**/*.css"
+  ],
   "files": [
     "components",
-    "app/globals.css"
+    "README.md"
   ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pack:local": "npm pack"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
-    "next": "16.2.3",
-    "ogl": "^1.0.11",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "ogl": "^1.0.11"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "tailwindcss": "^4"
   }
 }

@@ -1,6 +1,6 @@
 import Aurora from "./Aurora";
 
-export default function CreateOSAuroraBackground({
+export default function AuroraBackground({
   mode = "dark",
   className = "",
   showFooter = true,

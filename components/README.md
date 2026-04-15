@@ -1,35 +1,41 @@
-# CreateOS Aurora Component
+# Aurora Background Component
 
 Reusable background component for sharing with other developers.
 
 ## Export
 
 ```js
-import { CreateOSAuroraBackground } from "@/components";
+import { AuroraBackground } from "@/components";
+```
+
+If used as package, import styles:
+
+```js
+import "aurora-background-kit/styles.css";
 ```
 
 ## Basic usage
 
 ```jsx
-import { CreateOSAuroraBackground } from "@/components";
+import { AuroraBackground } from "@/components";
 
 export default function Page() {
-  return <CreateOSAuroraBackground mode="dark" />;
+  return <AuroraBackground mode="dark" />;
 }
 ```
 
 ## With overlay content
 
 ```jsx
-import { CreateOSAuroraBackground } from "@/components";
+import { AuroraBackground } from "@/components";
 
 export default function Page() {
   return (
-    <CreateOSAuroraBackground mode="light" showFooter>
+    <AuroraBackground mode="light" showFooter>
       <div className="mx-auto max-w-6xl px-6 py-24 text-center">
-        <h1 className="text-5xl font-semibold">CreateOS Aurora</h1>
+        <h1 className="text-5xl font-semibold">Aurora Background</h1>
       </div>
-    </CreateOSAuroraBackground>
+    </AuroraBackground>
   );
 }
 ```

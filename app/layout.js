@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "CreateOS Aurora",
+  title: "Aurora Background",
   description: "Single page implementation from Figma node 213:11932.",
 };
 

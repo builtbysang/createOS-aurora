@@ -1,6 +1,6 @@
-import { CreateOSAuroraBackground } from "../components";
+import { AuroraBackground } from "../components";
 
 export default function Home() {
-  return <CreateOSAuroraBackground mode="dark" />;
+  return <AuroraBackground mode="dark" />;
 }
 
